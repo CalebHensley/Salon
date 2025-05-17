@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Urbanist&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font: 17px/1.5 'Comfortaa', 'Urbanist', Verdana, Tahoma, sans-serif;
+}
+
+#skip-link {
+  background-color: #3a3839;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem;
+  position: absolute;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #000;
+  top: -9999px;
+}
+
+#skip-link:focus {
+  left: 40%;
+  top: 2rem;
+  z-index: 100;
+}
+
+#nav-trigger,
+#nav-box {
+  display: none;
+}
+
+body {
+  background-color: #3a3839;
+  margin: 0;
+}
+
+header h1 {
+  color: #fff;
+  font: 72px 'Urbanist';
+  margin: auto;
+  padding-bottom: 2rem;
+  padding-top: 1.5rem;
+  position: relative;
+  text-align: center;
+  text-shadow: 2px 2px 1px #000;
+  width: 100%;
+  z-index: 1;
+}
+
+header {
+  background-color: #d1d2d7;
+}
+
+header img {
+  float: left;
+  height: auto;
+  left: 20%;
+  max-width: 100%;
+  padding-left: 1rem;
+  position: absolute;
+}
+
+#nav-box,
+#nav-trigger {
+  display: none;
+}
+
+nav {
+  background-color: #fff;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+nav ul {
+  margin: auto;
+  padding-left: 0;
+  width: 100%;
+}
+
+nav li {
+  display: inline-block;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: #3a3839;
+  font: 24px 'Urbanist';
+  padding: 1rem 3rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #d1d2d7;
+}
+
+nav li:hover {
+  background-color: #d1d2d7;
+  color: #fff;
+}
+
+#current-page {
+  font-weight: bold;
+}
+
+#wrapper {
+  display: flex;
+  margin: auto;
+  margin-top: 4rem;
+  max-width: 1200px;
+  min-width: 380px;
+  width: 60%;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+h2 {
+  font: 32px 'Urbanist';
+}
+
+/* Home page */
+
+p {
+  font-size: 21px;
+}
+
+#sections {
+  display: flex;
+  flex-direction: column;
+}
+
+#sections section {
+  background-color: #d1d2d7;
+  border: 3px solid #d1d2d7;
+  display: block;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+#sections p {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+#sections img {
+  float: left;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#sections section:nth-of-type(even) {
+  background-color: #3a3839;
+  color: #d1d2d7;
+}
+
+#sections section:nth-of-type(even) img {
+  float: right;
+  margin-top: 1rem;
+  padding-right: 1rem;
+}
+
+table {
+  font-size: 18px;
+  margin: auto;
+}
+
+table caption {
+  font: 32px 'Urbanist';
+}
+
+th,
+td {
+  border: 1px solid #d1d2d7;
+  font-family: 'Urbanist';
+  font-weight: normal;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+#sections address a {
+  text-decoration: none;
+  color: #3a3839;
+}
+
+
+/* Stylist Page */
+
+#stylist {
+  display: flex;
+  gap: 2rem;
+  margin: auto;
+  text-align: center;
+}
+
+#stylist section {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+#stylist p {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+#stylist section:nth-of-type(odd) {
+  background-color: #d1d2d7;
+}
+
+#stylist section:nth-of-type(even) {
+  color: #d1d2d7;
+}
+
+address {
+  font-style: normal;
+  line-height: 2rem;
+}
+
+address a {
+  text-decoration: none;
+  color: #d1d2d7;
+}
+
+footer {
+  color: #d1d2d7;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+/* Contact page */
+
+#form-wrapper {
+  background-color: #C3C3C3;
+  margin: auto;
+  margin-bottom: 4rem;
+  padding: 2rem 4rem 4rem 4rem;
+  width: 80%;
+}
+
+#form-wrapper p {
+  font-size: 20px;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+fieldset {
+  position: relative;
+  border: 0;
+
+}
+
+legend {
+  font-size: 2rem;
+  text-align: center;
+}
+
+form label, 
+form input {
+  font-size: 24px;
+}
+
+form label {
+  display: block;
+  padding-top: 24px;
+  text-align: left;
+}
+
+form input {
+  text-align: left;
+  width: 100%;
+}
+
+form select {
+  font-size: 24px;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+}
+
+#submit {
+  display: block;
+  font-size: 24px;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+#contact-footer p {
+  color: #3a3839;
+}
+
+#contact-footer a {
+  color: #3a3839;
+}
+
+/* Fluid text */
+
+@media screen and (max-width:1500px) {
+  header h1 {
+    font-size: calc(36px + (72 - 36) * (100vw - 380px) / (1500 - 380));
+  }
+
+  nav a {
+    font-size: calc(20px + (24 - 20) * (100vw - 380px) / (1500 - 380));
+  }
+
+  h2,
+  table caption {
+   font-size: calc(17px + (32 - 17) * (100vw - 380px) / (1500 - 380));
+  }
+
+  p {
+    font-size: calc(14px + (21 - 14) * (100vw - 380px) / (1500 - 380))
+  }
+
+  #sections li {
+    font-size: calc(12px + (24 - 12) * (100vw - 380px) / (1500 - 380))
+  }
+
+  #form-wrapper p {
+    font-size: calc(12px + (20 - 12) * (100vw - 380px) / (1500 - 380))
+  }
+
+  form label,
+  form input,
+  form select,
+  #submit {
+    font-size: calc(12px + (24 - 12) * (100vw - 380px) / (1500 - 380))
+  }
+
+  legend {
+    font-size: calc(17px + (32 - 17) * (100vw - 380px) / (1500 - 380));
+  }
+
+}
+
+/* 1170 */
+
+@media screen and (max-width: 1170px) {
+
+  header img {
+    height: auto;
+    left: 0;
+    max-width: 100%;
+  }
+ 
+  #sections {
+    display: flex;
+    margin: auto;
+    text-align: center;
+  }
+
+  #sections section {
+    flex: 1;
+    margin: 0;
+    width: 100%;
+  }
+
+  #sections img {
+   float: none;
+  }
+
+  #sections section:nth-of-type(even) img {
+    float: none;
+  }
+
+  #sections ul {
+    padding: 0;
+  }
+
+  #stylist {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+
+  #form-wrapper {
+    padding: 0;
+  }
+
+  #form-wrapper p {
+    padding: 1rem 1rem 0 1rem;
+  }
+} 
+
+/* 715 */
+
+@media screen and (max-width: 715px) {
+
+  nav {
+    background-color: #fff;
+    border-radius: 0;
+    box-shadow: none;
+    left: 0;
+    margin-left: 0;
+    opacity: 98%;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+  }
+
+  nav ul {
+    display: none;
+    padding: 0;
+  }
+
+  nav li {
+    display: block;
+  }
+
+  nav a {
+    color: #3a3839;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    width: 100%;
+  }
+
+  nav li:hover {
+    color: #3a3839;
+  }
+
+  #nav-trigger {
+    font-size: 1.5rem;
+    color: #3a3839;
+    cursor: pointer;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #nav-box:checked + ul {
+    display: block;
+  }
+
+  #sections {
+    padding-top: 2rem;
+  }
+
+  #stylist {
+    padding-top: 6rem;
+  }
+
+  #form-wrapper {
+    margin-top: 6rem;
+  }
+
+}

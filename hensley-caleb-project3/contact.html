@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="favicon.ico" rel="icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <a href="#main-content" id="skip-link">Skip to main content</a>
+    <header role="banner">
+      <img src="images/head-3.png" width="234" height="143" alt="">
+      <h1>Brand Salon</h1>
+      <nav role="navigation">
+        <label for="nav-box" id="nav-trigger">Menu</label>
+        <input id="nav-box" type="checkbox">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="stylist.html">Stylist</a></li>
+          <li><a href="contact.html" id="current-page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <main id="main-content" tabindex="-1" role="main">
+        <div id="form-wrapper">
+          <p>Use the form below to schedule an appointment. Fields marked with * are required</p>
+          <fieldset>
+            <legend>Request an Appointment at Brand Salon</legend>
+            <form action="unit-3-form-handler.html" method="get" role="form">
+              <label for="name">*Name:</label>
+              <input type="text" id="name" name="name" required><br>
+              <label for="date">*Appointment Date</label>
+              <input type="date" id="date" name="date" required><br>
+              <label for="amount">*Number of clients</label>
+              <input type="text" id="amount" name="amount" required><br>
+              <label for="style">What service do you need?</label>
+              <select name="style" id="style" required>
+                <option value="">Select Option</option>
+                <option value="short">Short Cut</option>
+                <option value="medium">Medium Cut</option>
+                <option value="long">Long Cut</option>
+                <option value="color">Color</option>
+                <option value="perm">Perm</option>
+              </select>
+              <label for="time">*Time</label>
+              <input type="time" id="time" name="time" required><br>
+              <label for="phone">*Phone Number</label>
+              <input type="text" id="phone" name="phone" required><br>
+              <label for="request">Special request or product allergies:</label><br>
+              <textarea cols="1" rows="5" id="request" name="request"></textarea><br>
+              <input id="submit" type="submit" value="Request Appointment">
+            </form>
+          </fieldset>
+
+
+          <div id="contact-footer">
+            <footer role="contentinfo">
+              <address>
+                <p>Located at 555 Asheville Blvd</p>
+                <p>Phone : <a href="tel:828-555-1337">828-555-1337</a>
+                <p>Email : <a href="mailto:Support@brandsalon.com">Support@brandsalon.com</a></p>
+                <p>Hours : <time datetime="09:00">9:00 AM</time> to <time datetime="19:00">7:00</time> PM</p>
+              </address>
+            </footer>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
